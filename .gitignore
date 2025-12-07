@@ -1,0 +1,14 @@
+# Python build
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env
+web-Threat-Detect/
+
+# Logs & archive
+logs/
+archive/

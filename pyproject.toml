@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]         # PEP 660 editable support ke liye naya setuptools
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "web-threat-detection"
+version = "0.1.0"
+description = "Phishing Website or Web-based threat detection using Machine Learning"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "scipy",
+    "scikit-learn",
+    "xgboost",
+    "statsmodels",
+    "imbalanced-learn",
+    "ipykernel",
+    "python-dotenv",
+    "fastapi",
+    "structlog",
+    "tavily-python",
+    "pydantic",
+    "wikipedia",
+    "uvicorn",
+    "httpx",
+    "aiofiles",
+    "sqlalchemy",
+    "bcrypt",
+    "reportlab",
+    "python-docx",
+    "passlib"
+]
+
+# Optional: authors, license
+authors = [{ name = "Manjunath Puttaswamy" }]
+license = { text = "Proprietary" }
