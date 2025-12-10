@@ -33,7 +33,9 @@ dependencies = [
     "bcrypt",
     "reportlab",
     "python-docx",
-    "passlib"
+    "passlib",
+    "pyyaml",
+    "shap"
 ]
 
 # Optional: authors, license
