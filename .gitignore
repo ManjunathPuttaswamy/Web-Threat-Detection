@@ -8,6 +8,7 @@ wheels/
 .venv
 .env
 web-Threat-Detect/
+phising-threat/
 
 # Logs & archive
 logs/
