@@ -24,5 +24,13 @@ python-docx
 passlib
 shap
 pyyaml
+jinja2
+python-multipart
+joblib
+requests
+
+groq
+onnxruntime
+tldextract
 
 -e .

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <title>PhishGuard AI</title>
+</head>
+
+<body style="font-family:Arial; padding:20px">
+  <h2>PhishGuard AI – Phishing Detection</h2>
+
+  <input id="url" placeholder="Enter URL" style="width:400px"><br><br>
+  <button onclick="scan()">Scan</button>
+
+  <pre id="out"></pre>
+
+<script>
+async function scan() {
+  const url = document.getElementById("url").value;
+
+  const res = await fetch("/scan", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({ url })
+  });
+
+  const data = await res.json();
+  document.getElementById("out").innerText =
+    JSON.stringify(data, null, 2);
+}
+</script>
+</body>
+</html>
